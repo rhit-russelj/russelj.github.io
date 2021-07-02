@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body{
+    display: grid;
+    grid-template-areas: "head head"
+                         "nav nav"
+                         "main main"
+                         "foot foot";
+    grid-template-columns: 20em;
+
+}
+
+header{
+    background-image: url(moroccan-flower-dark.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    text-align: center;
+    font-family: 'Comic Neue:wght@700', cursive;
+    grid-area: head;
+    color: rgb(224, 224, 224);
+}
+
+body > nav{
+    text-align: center;
+    grid-area: nav;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main{
+    background-image: url(double-bubble-outline.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+    font-family: 'Comic Neue', cursive;
+    grid-area: main;
+    margin: 20px;
+}
+
+footer{
+    grid-area: foot;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px !important;
+}
+
+header, footer{
+    padding: 0.67rem 0; 
+}
+
+header h1, footer h1{
+    margin: 0;
+}
+body > nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+body > nav ul li{
+    display: inline;
+}
+
+h1{
+    margin: 20px;
+}
+
+#profilePic{
+    padding: 5px 50px;
+}
